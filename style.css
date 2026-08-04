@@ -1,0 +1,168 @@
+/*1.O elemento rem muda de acordo com o font-size sob zoom, e fica estático sob redimensionamento, ideal para font-size e margin.
+O elemento em também cresce junto ao zoom, e também fica estático sob redimensionamento, ideal para padding e margin e para componentes que devem crescer junto da palavra. E a % não foca no texto, mas sim no preenchimento do bloco. É a unidade que adapta-se quando a janela do navegador é alterada, pois o bloco vai se moldando para ocupar a tela, ideal para estrutura de layout e colunas, pois diferente do vw ela foca apenas no bloco, não na tela inteira */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.0rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1.0rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  font-size: 1.0rem;
+  text-decoration: none;
+.menu a:before {
+  content: "› "; 
+  margin-right: 4px;  
+  color: #bbdefb; 
+}
+
+}
+
+.secao {
+  padding: 32px;
+  max-width: 960px;
+}
+
+h2 + p {
+margin-top:1.0em;
+  color: #1565c0;
+  font-size: 1.5rem;
+}
+/* O seletor descendente (.menu a) pega todos os links que estão dentro dele, da tag principal, pode ser filho, neto ou bisneto por exemplo. O seletor com > (lista-dias > li) é fixo, contém apenas o filho direto, um nível abaixo dele.
+*/
+
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.0rem;
+  line-height: 24px;
+}
+
+.destaque ~ p{
+  font-size: 0.0625rem;
+  font-weight: bold;
+  color: #b71c1c;
+ font-style: italic
+}
+
+.cartao{
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1.0em;
+  margin: 0.5em;
+}
+.cartao:nth-child(even){
+background-color: #f5f5f5;
+}
+.cartao:nth-child(odd) {
+  background-color: #ffffff;
+}
+.cartao:not(:last-child) {
+  margin-bottom: 24px;
+}
+/*O :nth-child permite estilizar fontes sem classes pois ele procura não pelo nome, mas sim pela posição; nth-child(1), seguindo uma fórmula matemática. Ele irá alterar apenas os filhos que tem a mesma classe e são filhos do mesmo bloco pai.*/
+
+.botao: hover 
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1.0rem;
+  text-decoration: none;
+  padding: 0.5em; 1.0em;
+  margin-top: 0.5em;
+}
+a.botao {
+  background-color: orange;
+
+.lista-dias > li:first child{
+  font-weight: bold;
+}
+.lista-dias > li:last child {
+opacity:0.6;{
+{
+  font-size: 1.0rem;
+  line-height: 28px;
+}
+
+.formulario {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1.0rem;
+  margin-top: 16px;
+}
+label:after {
+  content: "*";
+  color: #b71c1c;  
+}
+
+
+input:focus, textarea:focus {
+  display: block;
+  width: 100%;
+  font-size: 1.0rem;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #999999;
+}
+input[type="email"] {
+  border: 2px solid #4caf50
+}
+input[type="password"] {
+  border: 2px solid #f44336;
+}
+button {
+  font-size: 1.0rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 24px;
+  font-size: 0.875rem;
+}
