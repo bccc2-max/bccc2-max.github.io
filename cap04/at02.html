@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Bimestrais</title>    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Boletim</caption>
+        
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col" id="estudante">Estudante</th>
+                <th colspan="4" scope="colgroup" id="bimestres">Notas Bimestrais</th>
+                <th rowspan="2" scope="col" id="media-final">Média Final</th>
+            </tr>
+            <tr>
+                <th scope="col" id="b1" headers="bimestres">1º Bimestre</th>
+                <th scope="col" id="b2" headers="bimestres">2º Bimestre</th>
+                <th scope="col" id="b3" headers="bimestres">3º Bimestre</th>
+                <th scope="col" id="b4" headers="bimestres">4º Bimestre</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <!-- scope="row" -->
+                <th scope="row" id="aluno1" class="text-left">João</th>
+                <td headers="aluno1 b1">8,5</td>
+                <td headers="aluno1 b2">7,0</td>
+                <td headers="aluno1 b3">9,0</td>
+                <td headers="aluno1 b4">8,0</td>
+                <td headers="aluno1 media-final">8,0</td>
+            </tr>
+            <tr>
+                <th scope="row" id="aluno2" class="text-left">Bruno</th>
+                <td headers="aluno2 b1">7,0</td>
+                <td headers="aluno2 b2">9,5</td>
+                <td headers="aluno2 b3">7,5</td>
+                <td headers="aluno2 b4">8,0</td>
+                <td headers="aluno2 media-final">8,0/td>
+            </tr>
+            <tr>
+                <th scope="row" id="aluno3" class="text-left">Carlos</th>
+                <td headers="aluno3 b1">7,0</td>
+                <td headers="aluno3 b2">6,0</td>
+                <td headers="aluno3 b3">8,5</td>
+                <td headers="aluno3 b4">9,0</td>
+                <td headers="aluno3 media-final">8,37</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                 colspan
+                <th scope="row" colspan="5" class="text-left">Média Geral</th>
+                <td>8,23</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
